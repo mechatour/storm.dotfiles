@@ -1,0 +1,107 @@
+@import url("./colors.css");
+* {
+    border-color: transparent;
+    color: @text;
+    font-family: Hack Nerd Font Mono, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+/*    font-weight: bold;*/
+    min-height: 25px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+window#waybar {
+    background-color: @background-shadow;
+    margin-bottom: 3px;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
+}
+
+button:hover {
+}
+
+#workspaces {
+}
+
+#workspaces button {
+    background: @background-shadow;
+    color: @foreground;
+}
+
+#workspaces button:hover {
+    background: @background-darker;
+}
+
+#workspaces button.active {
+    background: @background;
+}
+
+#workspaces button.urgent {
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0px;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0px;
+}
+
+#mode {
+    background-color: @background-shadow;
+}
+
+#clock,
+#pulseaudio,
+#wireplumber,
+#custom-wireguard,
+#keyboard-state,
+#custom-powermenu,
+#backlight{
+    background-color: @background-darker;
+    color: @text;
+}
+
+#network,
+#tray,
+#mode,
+#custom-weather,
+#idle_inhibitor,
+#window,
+#battery{
+    background-color: @background;
+    color: @text;
+}
+
+#taskbar button {
+}
+
+#window {
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+@keyframes blink {
+    to {
+        background-color: @background;
+        color: @text;
+    }
+}
+
+label:focus {
+/*    background-color: #000F0F;*/
+}
