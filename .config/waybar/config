@@ -108,11 +108,9 @@
 //         "interface": "wlp2s0",
          "format": "net:{ifname}",
          "format-wifi": "net:{essid} {signalStrength}%" ,
-         "format-ethernet": "{ifname} ",
+         "format-ethernet":"net:{ifname}",
          "format-disconnected": "", //An empty format will hide the module.
          "tooltip-format": "{ifname}",
-         "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-         "tooltip-format-ethernet": "{ifname} ",
          "tooltip-format-disconnected": "Disconnected",
          "max-length": 50
     },
