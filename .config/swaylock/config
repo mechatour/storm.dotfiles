@@ -3,7 +3,7 @@ font=Hack Nerd Font
 font-size=20
 indicator-radius=100
 
-image=~/.config/swaylock/tux_amber_wallpaper_lock.png
+image=~/.config/swaylock/fedora_wallpaper_storm_blurred.png
 
 color=2D2215
 inside-color=121107
