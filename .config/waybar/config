@@ -57,11 +57,11 @@
     "keyboard-state": {
         "capslock": true,
         "format": {
-            "capslock": "c/l:{icon}"
+            "capslock": "<span font='16'>{icon}</span>"
         },
         "format-icons": {
-            "locked": "A",
-            "unlocked": "a"
+            "locked": "󰬶",
+            "unlocked": "󰬵"
         }
     },
     
