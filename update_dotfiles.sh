@@ -25,7 +25,7 @@ rsync -a --mkpath --delete /home/zane/.config/pyradio/themes/* .config/pyradio/t
 
 rsync -a --mkpath --delete /home/zane/.themes/oomox-storm/* .themes/oomox-storm/
 
-rsync -a --mkpath --delete /home/zane/.config/Code/User/settings.json .config/Code/User/
+rsync -a --mkpath /home/zane/.config/Code/User/settings.json .config/Code/User/
 
 rsync -a --mkpath /home/zane/.config/starship.toml .config/
 
