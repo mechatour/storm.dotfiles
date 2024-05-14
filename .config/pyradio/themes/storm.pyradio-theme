@@ -1,0 +1,46 @@
+# Storm Theme by Zane Godden
+
+
+# Main foreground and background
+Stations            #cfcfd4 #040408
+
+# Playing station text color
+# (background color will come from Stations)
+Active Station      #707074
+
+# Status bar foreground and background
+Status Bar          #cfcfd4 #040408
+
+# Normal cursor foreground and background
+Normal Cursor       #040408 #cfcfd4 
+
+# Cursor foreground and background
+# when cursor on playing station
+Active Cursor       #040408 #707074
+
+# Cursor foreground and background
+# This is the Line Editor cursor
+Edit Cursor         #040408 #707074
+
+# Text color for extra function indication
+# and jump numbers within the status bar
+# (background color will come from Stations)
+Extra Func          #707074
+
+# Text color for URL
+# (background color will come from Stations)
+PyRadio URL         #707074
+
+# Message window border foreground and background.
+# The background color can be left unset.
+# Please refer to the following link for more info
+# https://github.com/coderholic/pyradio#secondary-windows-background
+#
+Messages Border     #707074
+
+# Theme Transparency
+# Values are:
+#   0: No transparency
+#   1: Theme is transparent
+#   2: Obey config setting (default)
+transparency        0 

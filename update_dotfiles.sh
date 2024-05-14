@@ -17,23 +17,18 @@ rsync -a --mkpath --delete /home/zane/.config/swaylock/* .config/swaylock/
 
 rsync -a --mkpath --delete /home/zane/.config/swayidle/* .config/swayidle/
 
-rsync -a --mkpath --delete /home/zane/.config/emacs/AmberGold-theme.el .config/emacs/
-
 rsync -a --mkpath --delete /home/zane/.config/qt6ct/* .config/qt6ct/
-
-rsync -a --mkpath --delete /home/zane/.config/Kvantum/Amber-Gold/* .config/Kvantum/Amber-Gold/
 
 rsync -a --mkpath --delete /home/zane/.config/Kvantum/kvantum.kvconfig .config/Kvantum/
 
 rsync -a --mkpath --delete /home/zane/.config/pyradio/themes/* .config/pyradio/themes/
 
-rsync -a --mkpath --delete '/home/zane/.themes/oomox-storm/'* '.themes/oomox-storm/'
+rsync -a --mkpath --delete /home/zane/.themes/oomox-storm/* .themes/oomox-storm/
 
+rsync -a --mkpath --delete /home/zane/.config/Code/User/settings.json .config/Code/User/
 
 rsync -a --mkpath /home/zane/.config/starship.toml .config/
 
-rsync -a --mkpath /home/zane/.bashrc ./
+rsync -a --mkpath /home/zane/Documents/Office/Projects/NerdFonts/WOPRTweaked_Nerd_Font_ZG.ttf .local/share/fonts/
 
-rsync -a --mkpath /home/zane/Documents/Office/Projects/NerdFonts/WOPRTweaked_Nerd_Font_ZG.ttf ./fonts/
-
-rsync -a --mkpath /home/zane/.local/share/fonts/HackNerdFont* ./fonts/
+rsync -a --mkpath /home/zane/.local/share/fonts/HackNerdFont* .local/share/fonts/
