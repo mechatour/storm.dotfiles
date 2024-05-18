@@ -17,7 +17,7 @@
         "Usbourne"
     ],
     "cmake.configureOnOpen": false,
-    "workbench.colorTheme": "Default Dark+",
+    "workbench.colorTheme": "Storm",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "git.confirmSync": false,
