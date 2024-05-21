@@ -1,4 +1,4 @@
-/*ROFI Storm Theme by Zane Godden*/
+/*ROFI Amber Gold Theme by Zane Godden*/
 
 configuration {
     show-icons:       true;
@@ -7,18 +7,18 @@ configuration {
 }
 
 * {
-    font:                "hack nerd font mono 10";
-    foreground:          #cfcfd4;
-    background-color:    #040408;
-    selected-background: #909094;
-    selected-foreground: #27272b;
-    separatorcolor:      #e3e3e7;
-    bordercolor:         #111115;
+    font:                "WOPRTweaked Nerd Font ZG 13";
+    foreground:          #ffbf00;
+    background-color:    #121107;
+    selected-background: #ffbf00;
+    selected-foreground: #121107;
+    separatorcolor:      #121107;
+    bordercolor:         #ffbf00;
 }
 
 #window {
     border:           1;
-    border-radius:    0;
+    border-radius:    5;
     border-color:     @bordercolor;
     padding:          0;
     width:            500px;
