@@ -12,12 +12,12 @@ configuration {
     background-color:    #040408;
     selected-background: #909094;
     selected-foreground: #27272b;
-    separatorcolor:      #e3e3e7;
-    bordercolor:         #111115;
+    separatorcolor:      #cfcfd4;
+    bordercolor:         #e3e3e7;
 }
 
 #window {
-    border:           1;
+    border:           2;
     border-radius:    0;
     border-color:     @bordercolor;
     padding:          0;

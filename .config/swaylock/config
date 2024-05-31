@@ -1,35 +1,35 @@
 ignore-empty-password
 font=Hack Nerd Font
-font-size=20
-indicator-radius=100
+font-size=8
+indicator-radius=30
 
 image=~/.config/swaylock/fedora_wallpaper_storm_blurred.png
 
-color=2D2215
-inside-color=121107
-line-color=121107
-ring-color=FFBF00
-text-color=F9E9D7
+color=27272B
+inside-color=111115
+line-color=111115
+ring-color=CFCFD4
+text-color=E3E3E7
 
-layout-bg-color=121107
-layout-text-color=F9E9D7
+layout-bg-color=111115
+layout-text-color=E3E3E7
 
 inside-clear-color=E2AE00
-line-clear-color=121107
-ring-clear-color=6272a4
-text-clear-color=121107
+line-clear-color=111115
+ring-clear-color=707074
+text-clear-color=111115
 
-inside-ver-color=FFBF00
-line-ver-color=121107
-ring-ver-color=FFBF00
-text-ver-color=121107
+inside-ver-color=CFCFD4
+line-ver-color=111115
+ring-ver-color=CFCFD4
+text-ver-color=111115
 
-inside-wrong-color=F9E9D7
-line-wrong-color=121107
-ring-wrong-color=F9E9D7
-text-wrong-color=121107
+inside-wrong-color=E3E3E7
+line-wrong-color=111115
+ring-wrong-color=E3E3E7
+text-wrong-color=111115
 
-bs-hl-color=F6BC45
-key-hl-color=E2AE00
+bs-hl-color=909094
+key-hl-color=E3E3E7
 
-text-caps-lock-color=F9E9D7
+text-caps-lock-color=E3E3E7
