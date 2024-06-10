@@ -3,7 +3,7 @@
 # Script to copy dotfiles to git directories
 #
 
-rsync -a --mkpath --delete /home/zane/.config/alacritty/* .config/alacritty/
+rsync -a --mkpath --delete /home/zane/.config/kitty/* .config/kitty/
 
 rsync -a --mkpath --delete /home/zane/.config/mako/* .config/mako/
 
@@ -19,8 +19,6 @@ rsync -a --mkpath --delete /home/zane/.config/swayidle/* .config/swayidle/
 
 rsync -a --mkpath --delete /home/zane/.config/qt6ct/* .config/qt6ct/
 
-rsync -a --mkpath --delete /home/zane/.config/Kvantum/kvantum.kvconfig .config/Kvantum/
-
 rsync -a --mkpath --delete /home/zane/.config/pyradio/themes/* .config/pyradio/themes/
 
 rsync -a --mkpath --delete /home/zane/.themes/oomox-storm/* .themes/oomox-storm/
@@ -28,7 +26,5 @@ rsync -a --mkpath --delete /home/zane/.themes/oomox-storm/* .themes/oomox-storm/
 rsync -a --mkpath /home/zane/.config/Code/User/settings.json .config/Code/User/
 
 rsync -a --mkpath /home/zane/.config/starship.toml .config/
-
-rsync -a --mkpath /home/zane/Documents/Office/Projects/NerdFonts/WOPRTweaked_Nerd_Font_ZG.ttf .local/share/fonts/
 
 rsync -a --mkpath /home/zane/.local/share/fonts/HackNerdFont* .local/share/fonts/
