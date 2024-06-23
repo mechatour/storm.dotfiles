@@ -1,5 +1,8 @@
 sort=-time
-anchor=bottom-right
+anchor=bottom-center
+outer-margin=15
+margin=15,0,0,0
+padding=5
 layer=overlay
 background-color=#040408
 width=300
