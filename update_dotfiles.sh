@@ -11,6 +11,8 @@ rsync -a --mkpath --delete /home/zane/.config/hypr/* .config/hypr/
 
 rsync -a --mkpath --delete /home/zane/.config/rofi/* .config/rofi/
 
+rsync -a --mkpath --delete /home/zane/.config/tofi/* .config/tofi/
+
 rsync -a --mkpath --delete /home/zane/.config/waybar/* .config/waybar/
 
 rsync -a --mkpath --delete /home/zane/.config/swaylock/* .config/swaylock/
