@@ -1,19 +1,21 @@
 @import url("./colors.css");
 * {
+    all: initial;
     border-color: transparent;
     color: @text;
     font-family: Hack Nerd Font Mono, Roboto, Helvetica, Arial, sans-serif;
     font-size: 10px;
     font-style: normal;
 /*    font-weight: bold;*/
-    min-height: 25px;
-    padding-left: 3px;
-    padding-right: 3px;
+    min-height: 1px;
+    border-radius: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 window#waybar {
-    background-color: @background-shadow;
-    margin-bottom: 3px;
+    background-color: @transparent;
+    padding: 0;
 }
 
 window#waybar.hidden {
