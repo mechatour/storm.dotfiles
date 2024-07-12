@@ -11,15 +11,15 @@
     border-radius: 4px;
     padding-left: 2px;
     padding-right: 2px;
+    margin: 0;
 }
 
 window#waybar {
     background-color: @transparent;
-    padding: 0;
 }
 
-window#waybar.hidden {
-    opacity: 0.2;
+tooltip {
+    background-color: @background;
 }
 
 button {
@@ -37,7 +37,7 @@ button:hover {
 }
 
 #workspaces button:hover {
-    background: @background-darker;
+    background: @background;
 }
 
 #workspaces button.active {
