@@ -1,17 +1,10 @@
 @import url("./colors.css");
 * {
-    all: initial;
-    border-color: transparent;
+    border: none;
     color: @text;
     font-family: Hack Nerd Font Mono, Roboto, Helvetica, Arial, sans-serif;
     font-size: 10px;
-    font-style: normal;
-/*    font-weight: bold;*/
-    min-height: 1px;
     border-radius: 4px;
-    padding-left: 2px;
-    padding-right: 2px;
-    margin: 0;
 }
 
 window#waybar {
@@ -20,6 +13,21 @@ window#waybar {
 
 tooltip {
     background-color: @background;
+}
+
+.modules-right {
+    background-color: @background;
+    padding: 0 4px 0 4px;
+}
+
+.modules-center {
+    background-color: @background;
+    padding: 0 4px 0 4px;
+    margin: 0 2px 0 2px;
+}
+
+.modules-left {
+    background-color: @transparent;
 }
 
 button {
@@ -34,6 +42,8 @@ button:hover {
 #workspaces button {
     background: @background-shadow;
     color: @foreground;
+    padding: 0 4px 0 4px;
+    margin: 0;
 }
 
 #workspaces button:hover {
@@ -47,16 +57,6 @@ button:hover {
 #workspaces button.urgent {
 }
 
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0px;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0px;
-}
-
 #mode {
     background-color: @background-shadow;
 }
@@ -67,43 +67,31 @@ button:hover {
 #custom-wireguard,
 #keyboard-state,
 #custom-powermenu,
-#backlight{
-    background-color: @background;
-    color: @text;
-}
-
+#backlight,
 #network,
 #tray,
 #mode,
 #custom-weather,
 #idle_inhibitor,
 #window,
+#taskbar,
 #battery{
-    background-color: @background;
+    background-color: @transparent;
     color: @text;
+    padding: 0 2px 0 2px;
 }
 
-#taskbar button {
+#taskbar button{
+    padding-left: 8px;
+    padding-right: 0;
+    margin: 0;
 }
 
-#window {
+#window{
+    padding: 0 4px 0 4px;
+    background-color: @background;
 }
 
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-}
-
-@keyframes blink {
-    to {
-        background-color: @background;
-        color: @text;
-    }
-}
-
-label:focus {
-/*    background-color: #000F0F;*/
+window#waybar.empty #window{
+    background-color: @transparent;
 }
