@@ -7,7 +7,7 @@
     "margin-right": 4,
     "margin-bottom": 0,
     // Choose the order of the modules
-    "modules-left": ["hyprland/workspaces","wlr/taskbar","hyprland/window"],
+    "modules-left": ["hyprland/workspaces","wlr/taskbar"], //,"hyprland/window"],
     "modules-center": ["clock", "custom/weather","keyboard-state"],
     "modules-right": ["tray", "pulseaudio", "battery", "backlight", "network", "custom/wireguard","idle_inhibitor","custom/powermenu"],
 
@@ -20,7 +20,7 @@
 
     "wlr/taskbar": {
 	    "format": "{icon}",
-	    "icon-size": 13,
+	    "icon-size": 10,
 	    "tooltip-format": "{title}",
 	    "on-click": "activate",
 	    "on-click-middle": "close"
