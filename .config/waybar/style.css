@@ -4,11 +4,10 @@
     color: @text;
     font-family: Hack Nerd Font Mono, Roboto, Helvetica, Arial, sans-serif;
     font-size: 10px;
-    border-radius: 4px;
 }
 
 window#waybar {
-    background-color: @transparent;
+    background-color: @background-shadow;
 }
 
 tooltip {
@@ -16,18 +15,18 @@ tooltip {
 }
 
 .modules-right {
-    background-color: @background;
-    padding: 0 4px 0 4px;
+/*    background-color: @background; */
+    padding: 0;
 }
 
 .modules-center {
-    background-color: @background;
-    padding: 0 4px 0 4px;
-    margin: 0 2px 0 2px;
+/*    background-color: @background; */
+    padding: 0;
+    margin: 0;
 }
 
 .modules-left {
-    background-color: @transparent;
+/*    background-color: @background; */
 }
 
 button {
@@ -40,8 +39,9 @@ button:hover {
 }
 
 #workspaces button {
-    background: @background-shadow;
+/*    background: @background-shadow;*/
     color: @foreground;
+    background: @background-darker;
     padding: 0 4px 0 4px;
     margin: 0;
 }
@@ -50,7 +50,7 @@ button:hover {
     background: @background;
 }
 
-#workspaces button.active {
+#workspaces button.focused {
     background: @background;
 }
 
@@ -58,7 +58,9 @@ button:hover {
 }
 
 #mode {
-    background-color: @background-shadow;
+    color: @background-darker;
+    background: @text;
+    padding: 0 2px 0 2px;
 }
 
 #clock,
@@ -70,7 +72,6 @@ button:hover {
 #backlight,
 #network,
 #tray,
-#mode,
 #custom-weather,
 #idle_inhibitor,
 #window,

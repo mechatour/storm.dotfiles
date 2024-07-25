@@ -7,7 +7,7 @@ rsync -a --mkpath --delete /home/zane/.config/kitty/* .config/kitty/
 
 rsync -a --mkpath --delete /home/zane/.config/mako/* .config/mako/
 
-rsync -a --mkpath --delete /home/zane/.config/hypr/* .config/hypr/
+rsync -a --mkpath --delete /home/zane/.config/sway/* .config/sway/
 
 rsync -a --mkpath --delete /home/zane/.config/rofi/* .config/rofi/
 
