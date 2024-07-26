@@ -41,9 +41,13 @@ button:hover {
 #workspaces button {
 /*    background: @background-shadow;*/
     color: @foreground;
-    background: @background-darker;
+    background: @background-shadow;
     padding: 0 4px 0 4px;
     margin: 0;
+}
+
+#workspaces button.visible {
+    background: @background-darker;
 }
 
 #workspaces button:hover {

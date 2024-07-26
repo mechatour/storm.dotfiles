@@ -1,41 +1,20 @@
 #
-# Zane's ultimate Sway config!
+# Zane's ultimate sway config!
 #
-
-# This config and setup in general relies on the following being installed:
-#
-# Hack Nerd Font
-# kitty
-# rofi (wayland fork) (for VPN & Power menus)
-# tofi
-# qt6ct
-# nwg-look
-# nm-applet & nm-connection-manager (Yes, Network Manager)
-# kdeconnect (the path might be incorrect - this is correct for Fedora)
-# autotiling python script (https://github.com/nwg-piotr/autotiling)
-# wl-clipboard (for wl-copy/paste)
-# cliphist (the path might be incorrect again - depending on where you install it) (https://github.com/sentriz/cliphist)
-# waybar
-# kde polkit
-# swayidle
-# swaylock
-# sway-screenshot
-# sway? Maybe
-# 
-# The setup also references shortcuts for Firefox, Thunderbird, Dolphin.
-# The screens are setup a few lines down there - you probably want to amend this.
-#
-# The sway config also loads .conf files found inside ~/.config/sway/config.d. It also loads anything in /etc/sway/conf.d (doesn't have to be .conf)
-# There is a basic swaybar config at the bottom that uses the storm colours if you prefer it to waybar (swaybar doesn't support right clicking tray icons)
 
 # Constants
 
 set $mod Mod4
 set $term kitty
+set $monitorrofi -monitor $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')
+set $menu rofi -show drun $monitorrofi
+set $wmenu wofi --show drun
 
-# Display & screens
+# Display
 
 font pango:Hack Nerd Font 8
+
+# Screen settings
 
 output DP-1 resolution 1920x1080 position 0,0
 output HDMI-A-1 resolution 1920x1080 position 1920,0
@@ -48,7 +27,7 @@ focus_follows_mouse no
 
 bindsym button5 mouse_move
 
-# Environment Variables are set up in .profile as the following doesn't work:
+# Environment Variables are set up in .profile
 
 # exec systemctl --user set-environment XDG_CURRENT_DESKTOP=sway
 # exec systemctl --user set-environment QT_QPA_PLATFORM=wayland
