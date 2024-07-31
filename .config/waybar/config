@@ -98,7 +98,7 @@
         "format": "{}°",
         "tooltip": true,
         "interval": 3600,
-        "exec": "~/scripts/wttrbar/target/release/wttrbar --location Eastleigh",
+        "exec": "~/.config/waybar/scripts/wttrbar/target/release/wttrbar --location eghi",
         "return-type": "json"
     },
     "idle_inhibitor": {
