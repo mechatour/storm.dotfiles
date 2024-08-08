@@ -53,8 +53,8 @@ Note
 - **Super+Mouse Right Button** Click to resize window
 - **Super+Shift+Cursors** to swap windows
 - **Super+Z** to resize windows
-- **Super+F1-F9** go to workspace
-- **Super+Shift+F1-F9** move window to workspace
+- **Super+1-9** go to workspace
+- **Super+Shift+1-9** move window to workspace
 - **Super+F** float window
 - **Super+B** Fullscreen window (Big)
 
