@@ -1,6 +1,6 @@
 # Storm for Sway
 
-### A theme built around the stormy rainclouds. Grey with a hint of blue.
+### A theme built around stormy rainclouds. Grey with a hint of blue.
 
 
 Note
@@ -35,16 +35,17 @@ Note
 
 ---
 
-## Other themed elements and resources
+## Info and other themed elements
 
 - VS Code theme available [here](https://marketplace.visualstudio.com/items?itemName=JackdawDev.storm-darktheme&ssr=false)
 - Vimix White icon theme available [here](https://github.com/vinceliuice/vimix-icon-theme)
 - Vimix Dark cursor theme (in `.icons`)
-- Hack Nerd Font `fonts` folder. 
+- Hack Nerd Font in `fonts` folder or download the latest version. 
+- To use the vim colours, put the file in the right place and add `set termguicolors` and `colorscheme storm-true` to your `.vimrc`
 
 ---
 
-### Quick keys to get started in hyprland
+### Quick keys to get started in Sway
 
 - **Super+Q** for Kitty
 - **Super+W** for Firefox

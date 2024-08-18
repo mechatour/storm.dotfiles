@@ -31,4 +31,4 @@ rsync -a --mkpath /home/zane/.config/starship.toml .config/
 
 rsync -a --mkpath /home/zane/.local/share/fonts/HackNerdFont* .local/share/fonts/
 
-rsync -a --mkpath /home/zane/.vim/colors/storm.vim .vim/colors/
+rsync -a --mkpath /home/zane/.vim/colors/storm* .vim/colors/
