@@ -69,7 +69,7 @@ input "type:keyboard" {
     bindsym $mod+f floating toggle
     bindsym $mod+r exec tofi-drun
     bindsym $mod+Control+r reload
-    bindsym $mod+v exec ~/go/bin/cliphist list | rofi -dmenu -p "Item to paste" | ~/bin/cliphist decode | wl-copy && wtype -M ctrl v -m ctrl
+    bindsym $mod+v exec ~/go/bin/cliphist list | rofi -dmenu -p "Item to paste" | ~/go/bin/cliphist decode | wl-copy && wtype -M ctrl v -m ctrl
     bindsym $mod+l exec ~/.config/swaylock/lock.sh
     bindsym $mod+s exec sh -c 'qt6ct & nwg-look'
     bindsym $mod+n exec nm-connection-editor
