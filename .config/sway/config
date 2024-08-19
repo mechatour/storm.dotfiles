@@ -56,6 +56,13 @@ input "type:keyboard" {
     xkb_layout "gb"
 }
 
+# Thinkpad Touchpad
+
+input "2:7:SynPS/2_Synaptics_TouchPad" {
+    scroll_factor 0.08
+    natural_scroll enabled
+    pointer_accel -0.2
+}
 # Key bindings
 
 # Basics
