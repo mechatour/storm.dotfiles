@@ -23,6 +23,7 @@ Note
 - Waybar
 - Swaylock
 - Swayidle
+- Sway Screenshot
 - Vim
 - Qt6ct
 - GTK
