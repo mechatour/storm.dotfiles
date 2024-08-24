@@ -35,6 +35,10 @@ bindsym button5 mouse_move
 # exec systemctl --user set-environment XCURSOR_SIZE=24
 # exec systemctl --user set-environment TERMINAL=kitty
 
+# Gaps
+gaps inner 5
+smart_gaps off
+
 # Startup Execute
 
 exec systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &

@@ -39,5 +39,6 @@
         "editorBracketHighlight.foreground5": "#644064",
         "editorBracketHighlight.foreground6": "#406464",
         "editorBracketHighlight.unexpectedBracket.foreground": "#cfcfd4"
-    }
+    },
+    "go.toolsManagement.autoUpdate": true
 }
