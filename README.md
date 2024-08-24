@@ -38,11 +38,14 @@ Note
 ## Info and other themed elements
 
 - VS Code theme available [here](https://marketplace.visualstudio.com/items?itemName=JackdawDev.storm-darktheme&ssr=false)
-- Vimix White icon theme available [here](https://github.com/vinceliuice/vimix-icon-theme)
+- Storm Trooper icons (in `.icons` and `.local/share/icons`)
 - Vimix Dark cursor theme (in `.icons`)
-- Hack Nerd Font in `fonts` folder or download the latest version. 
-- To use the vim colours, put the file in the right place and add `set termguicolors` and `colorscheme storm-true` to your `.vimrc`
-
+- Hack Nerd Font in `.local/share/fonts` folder or download the latest version. 
+- To use the vim colours, put the file in the right place (usually `~/.vim/colors`) and add the following to your `.vimrc`:
+```text
+set termguicolors
+colorscheme storm-true
+```
 ---
 
 ### Quick keys to get started in Sway
@@ -67,11 +70,31 @@ Check out the shortcuts in sway's config for the rest.
 
 | Colour Name | Value |
 | --- | --- |
-| background-shadow | #0a0a04 |
-| background-darker | #121107 |
-| background| #2d2215 |
-| selection | #9d7122 |
-| foreground | #f9e9d7 |
-| comment | #f6bc45 |
-| amber | #ffbf00 |
-| compliment | #e2ae00 |
+| **Main Theme** | |
+| background-shadow | \#040408 |
+| background-darker | \#111115 |
+| background| \#27272b |
+| selection | \#707074 |
+| foreground | \#909094 |
+| comment | \#232327 |
+| text | \#cfcfd4 |
+| light | \#e3e3e7 |
+| compliment | \#878383 |
+| **Terminal Colours** | **normal** |
+| black | \#040408 |
+| red | \#642020 |
+| green | \#206420 |
+| yellow | \#646420 |
+| blue | \#202064 |
+| magenta | \#642064 |
+| cyan | \#206464 |
+| white | \#cfcfd4 |
+| **Terminal Colours** | **bright** |
+| black | \#111115 |
+| red | \#C46060 |
+| green | \#60C460 |
+| yellow | \#C4C460 |
+| blue | \#6060C4 |
+| magenta | \#C460C4 |
+| cyan | \#60C4C4 |
+| white | \#e3e3e7 |
