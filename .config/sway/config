@@ -90,6 +90,8 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
     bindsym --locked XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
     bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
     bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym xf86MonBrightnessDown exec brightnessctl s 10%-
+bindsym xf86MonBrightnessUp exec brightnessctl s +10%
 
 # Screen enable / disable
 
