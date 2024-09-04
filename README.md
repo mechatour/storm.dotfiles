@@ -15,7 +15,7 @@ Note
 
 ## Themed elements
 
-- Sway
+- SwayFX (fork of Sway with eye candy)
 - Kitty
 - Mako
 - Rofi (wayland fork)

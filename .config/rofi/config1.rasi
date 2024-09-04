@@ -7,18 +7,20 @@ configuration {
 }
 
 * {
-    font:                "hack nerd font mono 10";
-    foreground:          #cfcfd4;
-    background-color:    #040408;
-    selected-background: #909094;
-    selected-foreground: #27272b;
-    separatorcolor:      #cfcfd4;
-    bordercolor:         #e3e3e7;
+    font:                   "hack nerd font mono 10";
+    foreground:             #cfcfd4;
+    background-color:       #040408;
+    selected-background:    #909094;
+    selected-foreground:    #27272b;
+    title-background:       #27272b;
+    title-foreground:       #707074;
+    separatorcolor:         #cfcfd4;
+    bordercolor:            #707074;
 }
 
 #window {
-    border:           2;
-    border-radius:    0;
+    border:           1;
+    border-radius:    10;
     border-color:     @bordercolor;
     padding:          0;
     width:            500px;
@@ -33,7 +35,8 @@ configuration {
     padding:          0px;
 }
 #textbox {
-    text-color:       @selected-foreground;
+    background:       @title-background;
+    text-color:       @title-foreground;
     
 }
 #listview {
@@ -74,25 +77,25 @@ configuration {
 }
 #inputbar {
     spacing:          0;
-    background-color: @selected-background;
+    background-color: @title-background;
     padding:          10px 10px 7px 10px;
-    text-color:       @selected-foreground;
+    text-color:       @title-foreground;
 }
 #case-indicator {
     spacing:          0;
-    text-color:       @selected-foreground;
-    background-color: @selected-background;
+    text-color:       @title-foreground;
+    background-color: @title-background;
 }
 #entry {
     spacing:          0;
-    text-color:       @selected-foreground;
-    background-color: @selected-background;
+    text-color:       @title-foreground;
+    background-color: @title-background;
     width:20px;
 }
 #prompt {
     spacing:          0;
-    text-color:       @selected-foreground;
-    background-color: @selected-background;
+    text-color:       @title-foreground;
+    background-color: @title-background;
     width:100px;
 }
 #inputbar {
@@ -102,8 +105,8 @@ configuration {
     expand:           false;
     str:              ": ";
 /*    margin:           0px 0.3em 0em 0em ;*/
-    background-color: @selected-background;
-    text-color:       @selected-foreground;
+    background-color: @title-background;
+    text-color:       @title-foreground;
 }
 element-text, element-icon {
     background-color: inherit;
