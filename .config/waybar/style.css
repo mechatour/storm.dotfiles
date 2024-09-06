@@ -85,7 +85,9 @@ button:hover {
     color: @text;
     padding: 0 2px 0 2px;
 }
-
+#custom-powermenu{
+    padding-right: 10px;
+}
 #taskbar button{
     padding: 0 0 0 8px;
     margin: 0;

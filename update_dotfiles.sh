@@ -33,7 +33,7 @@ rsync -a --mkpath /home/zane/.local/share/fonts/HackNerdFont* .local/share/fonts
 
 rsync -a --mkpath /home/zane/.vim/colors/storm* .vim/colors/
 
-rsync -a --mkpath /home/zane/Obsidian/.obsidian/themes/storm/* obsidian/themes/storm/
+rsync -a --mkpath /home/zane/Obsidian/.obsidian/themes/Storm/* obsidian/themes/Storm/
 
 rsync -a --mkpath /home/zane/.local/share/icons/StormTrooper/* .local/share/icons/StormTrooper/
 rsync -a --mkpath /home/zane/.icons/StormTrooper/* .icons/StormTrooper/
