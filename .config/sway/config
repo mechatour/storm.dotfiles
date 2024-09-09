@@ -85,7 +85,7 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
 
     floating_modifier $mod normal
     bindsym $mod+q exec $term
-    bindsym $mod+w exec firefox
+    bindsym $mod+w exec vivaldi
     bindsym $mod+t exec thunderbird
     bindsym $mod+c kill
     bindsym $mod+e exec dolphin
