@@ -19,6 +19,7 @@ font pango:Hack Nerd Font 8
 output DP-1 resolution 1920x1080 position 0,0
 output HDMI-A-1 resolution 1920x1080 position 1920,0
 output * bg ~/.config/swaylock/fedora_wallpaper_storm.png fill
+workspace 1 output DP-1
 
 # Prevent lock when a window is fullscreen
 
@@ -34,21 +35,15 @@ bindsym button5 mouse_move
 
 # Environment Variables are set up in .profile
 
-# exec systemctl --user set-environment XDG_CURRENT_DESKTOP=sway
-# exec systemctl --user set-environment QT_QPA_PLATFORM=wayland
-# exec systemctl --user set-environment QT_QPA_PLATFORMTHEME=qt6ct
-# exec systemctl --user set-environment XCURSOR_SIZE=24
-# exec systemctl --user set-environment TERMINAL=kitty
-
 # Gaps
 gaps inner 5
 smart_gaps off
 
 # SwayFX
-corner_radius 10
-layer_effects "waybar" corner_radius 10 
-titlebar_separator disable
-default_dim_inactive 0.4
+# corner_radius 10
+# layer_effects "waybar" corner_radius 10
+# titlebar_separator disable
+# default_dim_inactive 0.2
 
 # Startup Execute
 
@@ -58,13 +53,13 @@ exec /usr/lib/kdeconnectd
 exec /usr/bin/kdeconnect-indicator
 exec --no-startup-id nm-applet
 exec_always --no-startup-id autotiling
+exec_always nwggrid-server
 exec --no-startup-id waybar
 exec /usr/libexec/kf6/polkit-kde-authentication-agent-1
 exec /usr/bin/mako
 exec wl-paste --type text --watch ~/go/bin/cliphist store
 exec wl-paste --type image --watch ~/go/bin/cliphist store
 exec swayidle -w
-exec ~/.config/sway/delayed-vpn.sh
 
 # Keyboard settings
 
@@ -85,12 +80,13 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
 
     floating_modifier $mod normal
     bindsym $mod+q exec $term
-    bindsym $mod+w exec vivaldi
+    bindsym $mod+w exec firefox
     bindsym $mod+t exec thunderbird
     bindsym $mod+c kill
     bindsym $mod+e exec dolphin
     bindsym $mod+f floating toggle
     bindsym $mod+r exec tofi-drun
+    bindsym $mod+F1 exec nwggrid
     bindsym $mod+Control+r reload
     bindsym $mod+v exec ~/go/bin/cliphist list | rofi -dmenu -p "Item to paste" | ~/go/bin/cliphist decode | wl-copy && wtype -M ctrl v -m ctrl
     bindsym $mod+l exec ~/.config/swaylock/lock.sh
@@ -207,7 +203,9 @@ default_border normal 1
 
 # Window Rules
 
-for_window [class="REAPER"] floating enable
+for_window {
+    [class="REAPER"] floating enable; border none; shadows disable; inhibit_idle focus; corner_radius 0; default_dim_inactive 0
+}
 
 # Swaybar
 #

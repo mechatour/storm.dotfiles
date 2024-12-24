@@ -7,7 +7,7 @@
     "margin-right": 5,
     "margin-bottom": 5,
     // Choose the order of the modules
-    "modules-left": ["sway/workspaces","sway/mode","wlr/taskbar"], //,"hyprland/window"],
+    "modules-left": ["hyprland/workspaces","wlr/taskbar","hyprland/window"],
     "modules-center": ["clock", "custom/weather","keyboard-state"],
     "modules-right": ["tray", "pulseaudio", "battery", "backlight", "network", "custom/wireguard","idle_inhibitor","custom/powermenu"],
 

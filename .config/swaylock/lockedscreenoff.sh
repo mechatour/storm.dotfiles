@@ -4,6 +4,11 @@
 #the screens. This script should be used in a timer such as swayidle
 if [[ $(pgrep swaylock|wc -l) != 0 ]] 
 then
-#    hyprctl dispatch dpms off
-    swaymsg "output * dpms off"
+    if [[ "$DESKTOP_SESSION" == "hyprland" ]]
+    then
+        hyprctl dispatch dpms off
+    elif [[ "$DESKTOP_SESSION" == "sway" ]]
+    then
+        swaymsg "output * dpms off"
+    fi
 fi

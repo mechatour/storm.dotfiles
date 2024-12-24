@@ -43,7 +43,8 @@ svg * {
 	--inline-title-color: #909094;
 	--text-normal: #cfcfd4;
 	--text-muted: #cfcfd4;
-    --text-selection: #040408;
+
+    --text-selection: #909094;
 
     --tag-color: #040408;
     --tag-background: #cfcfd4;
@@ -51,13 +52,14 @@ svg * {
 	--code-background: #111115;
 
 	--link-decoration: none;
-	--link-decoration-hover: underline;
-	--link-color-hover: #e3e3e7;
+	--link-decoration-hover: none;
+	--link-color-hover: #cfcfd4;
 	--link-color: #cfcfd4;
 	--link-external-decoration: none;
-	--link-external-decoration-hover: underline;
-	--link-external-color-hover: #e3e3e7;
+	--link-external-decoration-hover: none;
+	--link-external-color-hover: #cfcfd4;
 	--link-external-color: #cfcfd4;
+	--link-weight: bold;
 
 	--icon-color: #cfcfd4;
 
@@ -68,9 +70,9 @@ svg * {
 	--h5-color: #909094;
 	--h1-size: 1.3em;
 	--h2-size: 1.2em;
-	--h3-size: 1.15em;
-	--h4-size: 1.1em;
-	--h5-size: 1.05em;
+	--h3-size: 1.0em;
+	--h4-size: 0.75em;
+	--h5-size: 0.65em;
 
 }
 

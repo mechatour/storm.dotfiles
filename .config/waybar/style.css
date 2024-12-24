@@ -40,6 +40,7 @@ button:hover {
 
 #workspaces button {
 /*    background: @background-shadow;*/
+    border-radius: 0px;
     color: @foreground;
     background: @background-shadow;
     padding: 0 4px 0 4px;
