@@ -82,6 +82,7 @@ button:hover {
 #window,
 #taskbar,
 #battery{
+    border-radius: 0px;
     background-color: @transparent;
     color: @text;
     padding: 0 2px 0 2px;
