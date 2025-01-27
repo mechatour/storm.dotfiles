@@ -45,5 +45,8 @@
     "remote.enableRemoteServer": false,
     "editor.fontFamily": "Hack Nerd Font",
     "editor.fontSize": 14,
-    "update.mode": "none"
+    "update.mode": "none",
+    "editor.tabSize": 3,
+   "editor.detectIndentation": false,
+   "zig.zls.enabled": "on"
 }
