@@ -1,32 +1,37 @@
 @import url("./colors.css");
 * {
-    border: none;
-    color: @text;
-    font-family: Hack Nerd Font Mono, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 10px;
+  border: none;
+  color: @text;
+  font-family:
+    Hack Nerd Font Mono,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  font-size: 10px;
 }
 
 window#waybar {
-    background-color: @background-shadow;
+  background-color: @background-shadow;
 }
 
 tooltip {
-    background-color: @background;
+  background-color: @background;
 }
 
 .modules-right {
-/*    background-color: @background; */
-    padding: 0;
+  /*    background-color: @background; */
+  padding: 0;
 }
 
 .modules-center {
-/*    background-color: @background; */
-    padding: 0;
-    margin: 0;
+  /*    background-color: @background; */
+  padding: 0;
+  margin: 0;
 }
 
 .modules-left {
-/*    background-color: @background; */
+  /*    background-color: @background; */
 }
 
 button {
@@ -39,33 +44,33 @@ button:hover {
 }
 
 #workspaces button {
-/*    background: @background-shadow;*/
-    border-radius: 0px;
-    color: @foreground;
-    background: @background-shadow;
-    padding: 0 4px 0 4px;
-    margin: 0;
+  /*    background: @background-shadow;*/
+  border-radius: 0px;
+  color: @foreground;
+  background: @background-shadow;
+  padding: 0 4px 0 4px;
+  margin: 0;
 }
 
 #workspaces button.visible {
-    background: @background-darker;
+  background: @background-darker;
 }
 
 #workspaces button:hover {
-    background: @background;
+  background: @background;
 }
 
 #workspaces button.focused {
-    background: @background;
+  background: @background;
 }
 
 #workspaces button.urgent {
 }
 
 #mode {
-    color: @background-darker;
-    background: @text;
-    padding: 0 2px 0 2px;
+  color: @background-darker;
+  background: @text;
+  padding: 0 2px 0 2px;
 }
 
 #clock,
@@ -81,25 +86,25 @@ button:hover {
 #idle_inhibitor,
 #window,
 #taskbar,
-#battery{
-    border-radius: 0px;
-    background-color: @transparent;
-    color: @text;
-    padding: 0 2px 0 2px;
+#battery {
+  border-radius: 0px;
+  background-color: @transparent;
+  color: @text;
+  padding: 0 2px 0 2px;
 }
-#custom-powermenu{
-    padding-right: 10px;
+#custom-powermenu {
+  padding-right: 10px;
 }
-#taskbar button{
-    padding: 0 0 0 8px;
-    margin: 0;
-}
-
-#window{
-    padding: 0 4px 0 4px;
-    background-color: @background;
+#taskbar button {
+  padding: 0 0 0 8px;
+  margin: 0;
 }
 
-window#waybar.empty #window{
-    background-color: @transparent;
+#window {
+  padding: 0 4px 0 4px;
+  background-color: @background;
+}
+
+window#waybar.empty #window {
+  background-color: @transparent;
 }

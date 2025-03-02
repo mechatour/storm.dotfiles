@@ -48,5 +48,9 @@
     "update.mode": "none",
     "editor.tabSize": 3,
    "editor.detectIndentation": false,
-   "zig.zls.enabled": "on"
+   "zig.zls.enabled": "on",
+   "extensions.experimental.affinity": {
+      "asvetliakov.vscode-neovim": 1
+   },
+   "makefile.configureOnOpen": true
 }
