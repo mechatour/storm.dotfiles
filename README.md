@@ -39,6 +39,7 @@ Note
 ## Info and other themed elements
 
 - VS Code theme available [here](https://marketplace.visualstudio.com/items?itemName=JackdawDev.storm-darktheme&ssr=false)
+- Firefox theme available [here](https://addons.mozilla.org/en-GB/firefox/addon/storm-by-mechatour/)
 - Storm Trooper icons (in `.icons` and `.local/share/icons`)
 - Vimix Dark cursor theme (in `.icons`)
 - Hack Nerd Font in `.local/share/fonts` folder or download the latest version. 
