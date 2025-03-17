@@ -43,14 +43,17 @@
     "go.toolsManagement.autoUpdate": true,
     "lldb.suppressUpdateNotifications": true,
     "remote.enableRemoteServer": false,
-    "editor.fontFamily": "Hack Nerd Font",
+    "editor.fontFamily": "\"0xProto\"",
     "editor.fontSize": 14,
     "update.mode": "none",
-    "editor.tabSize": 3,
-   "editor.detectIndentation": false,
+   "editor.tabSize": 3,
    "zig.zls.enabled": "on",
    "extensions.experimental.affinity": {
       "asvetliakov.vscode-neovim": 1
    },
-   "makefile.configureOnOpen": true
+"makefile.configureOnOpen": true,
+"terminal.external.linuxExec": "kitty",
+"window.titleBarStyle": "native",
+"window.customTitleBarVisibility": "never",
+"editor.fontLigatures": true
 }
