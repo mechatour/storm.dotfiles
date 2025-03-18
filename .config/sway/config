@@ -19,7 +19,6 @@ font pango:Hack Nerd Font 9
 output DP-1 resolution 1920x1080 position 0,0
 output HDMI-A-1 resolution 1920x1080 position 1920,0
 output * bg ~/.config/swaylock/fedora_wallpaper_storm.png fill
-workspace 1 output DP-1
 
 # Prevent lock when a window is fullscreen
 
