@@ -73,6 +73,17 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
     natural_scroll enabled
     pointer_accel -0.2
 }
+
+# Thinkpad Trackpoint
+
+input "2:10:TPPS/2_IBM_TrackPoint" {
+
+   accel_profile flat
+   pointer_accel -0.2
+   natural_scroll disabled
+
+}
+
 # Key bindings
 
 # Basics
@@ -85,6 +96,7 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
     bindsym $mod+e exec dolphin
     bindsym $mod+f floating toggle
     bindsym $mod+r exec tofi-drun
+    bindsym $mod+d exec tofi-drun
     bindsym $mod+F1 exec nwggrid
     bindsym $mod+Control+r reload
     bindsym $mod+v exec ~/go/bin/cliphist list | rofi -dmenu -p "Item to paste" | ~/go/bin/cliphist decode | wl-copy && wtype -M ctrl v -m ctrl

@@ -16,7 +16,6 @@
         "Customisation"
     ],
     "cmake.configureOnOpen": false,
-    "workbench.colorTheme": "Storm",
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "git.confirmSync": false,
@@ -55,5 +54,19 @@
 "terminal.external.linuxExec": "kitty",
 "window.titleBarStyle": "native",
 "window.customTitleBarVisibility": "never",
-"editor.fontLigatures": true
+"editor.fontLigatures": true,
+"workbench.editor.empty.hint": "hidden",
+"idf.hasWalkthroughBeenShown": true,
+"idf.espIdfPath": "/home/zane/esp/v5.4.2/esp-idf",
+"idf.toolsPath": "/home/zane/.espressif",
+"idf.gitPath": "git",
+"idf.pythonInstallPath": "/usr/bin/python",
+"chat.agent.enabled": false,
+"githubPullRequests.createOnPublishBranch": "never",
+"settingsSync.ignoredSettings": [],
+"chat.commandCenter.enabled": false,
+"github.copilot.enable": {
+    "*": false
+},
+"workbench.colorTheme": "Storm"
 }
