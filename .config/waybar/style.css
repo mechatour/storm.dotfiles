@@ -34,6 +34,20 @@ tooltip {
   /*    background-color: @background; */
 }
 
+.niri-taskbar button {
+   border-radius: 0px;
+   color: @foreground;
+   background: @background-shadow;
+}
+
+.niri-taskbar button:hover {
+  background: @background-darker;
+}
+
+.niri-taskbar button.focused {
+  background: @background;
+}
+
 button {
 }
 
@@ -44,7 +58,6 @@ button:hover {
 }
 
 #workspaces button {
-  /*    background: @background-shadow;*/
   border-radius: 0px;
   color: @foreground;
   background: @background-shadow;
@@ -57,10 +70,14 @@ button:hover {
 }
 
 #workspaces button:hover {
-  background: @background;
+  background: @background-darker;
 }
 
 #workspaces button.focused {
+  background: @background;
+}
+
+#workspaces button.active {
   background: @background;
 }
 

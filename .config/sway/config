@@ -6,9 +6,6 @@
 
 set $mod Mod4
 set $term kitty
-set $monitorrofi -monitor $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')
-set $menu rofi -show drun $monitorrofi
-set $wmenu wofi --show drun
 
 # Display
 
@@ -16,8 +13,8 @@ font pango:Hack Nerd Font 9
 
 # Screen settings
 
-output DP-1 resolution 1920x1080 position 0,0
-output HDMI-A-1 resolution 1920x1080 position 1920,0
+exec_always ~/.config/sway/autoconfig
+include ~/.config/sway/monitor-setup
 output * bg ~/.config/swaylock/fedora_wallpaper_storm.png fill
 
 # Prevent lock when a window is fullscreen

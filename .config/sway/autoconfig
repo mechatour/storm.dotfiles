@@ -1,0 +1,24 @@
+#!/bin/sh
+CONFIG_FILE="$HOME/.config/sway/monitor-setup"
+
+# Reset the config file (start fresh)
+echo "# Auto-generated monitor config (conditional)" > "$CONFIG_FILE"
+
+# Check if monitors are connected
+MONITOR_LEFT="DP-1"
+MONITOR_RIGHT="HDMI-A-1"
+FOUND_LEFT=$(swaymsg -t get_outputs | grep "$MONITOR_LEFT")
+FOUND_RIGHT=$(swaymsg -t get_outputs | grep "$MONITOR_RIGHT")
+
+# Only apply settings if both monitors are detected
+if [ "$FOUND_LEFT" ] && [ "$FOUND_RIGHT" ]; then
+    cat << EOF >> "$CONFIG_FILE"
+    # Set monitor positions (left=$MONITOR_LEFT, right=$MONITOR_RIGHT)
+   output $MONITOR_LEFT pos 0 0
+   output $MONITOR_RIGHT pos 1920 0
+
+   # Assign workspaces (1=$MONITOR_LEFT, 2=$MONITOR_RIGHT)
+   workspace 1 output $MONITOR_LEFT
+   workspace 2 output $MONITOR_RIGHT
+EOF
+fi

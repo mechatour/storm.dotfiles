@@ -2,7 +2,7 @@
 
 entries="Reboot\nShutdown\nLogout"
 
-selected=$(echo -e $entries | rofi -dmenu -p "Power Menu" -i -l 3| awk '{print tolower($1)}')
+selected=$(echo -e $entries | rofi -dmenu -p "Power Menu" -i -l 3 -normal-window| awk '{print tolower($1)}')
 
 case $selected in
   logout)
