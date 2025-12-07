@@ -5,7 +5,7 @@
 # Constants
 
 set $mod Mod4
-set $term kitty
+set $term kitty -c ~/.config/sway/scripts/kitty/kitty/conf
 
 # Display
 
@@ -52,10 +52,10 @@ exec_always --no-startup-id autotiling
 exec_always nwggrid-server
 exec --no-startup-id ~/.config/sway/scripts/waybar.sh
 exec /usr/libexec/kf6/polkit-kde-authentication-agent-1
-exec /usr/bin/mako
+exec /usr/bin/mako -c ~/.config/sway/scripts/mako/config
 exec wl-paste --type text --watch ~/go/bin/cliphist store
 exec wl-paste --type image --watch ~/go/bin/cliphist store
-exec swayidle -w
+exec swayidle -w -C ~/.config/sway/scripts/swayidle/config
 
 # Keyboard settings
 
