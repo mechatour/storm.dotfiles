@@ -1,8 +1,1 @@
 # Auto-generated monitor config (conditional)
-    # Set monitor positions (left=DP-1, right=HDMI-A-1)
-   output DP-1 pos 0 0
-   output HDMI-A-1 pos 1920 0
-
-   # Assign workspaces (1=DP-1, 2=HDMI-A-1)
-   workspace 1 output DP-1
-   workspace 2 output HDMI-A-1

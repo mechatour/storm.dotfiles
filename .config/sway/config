@@ -5,7 +5,7 @@
 # Constants
 
 set $mod Mod4
-set $term kitty -c ~/.config/sway/scripts/kitty/kitty/conf
+set $term kitty -c ~/.config/sway/scripts/kitty/kitty.conf
 
 # Display
 
