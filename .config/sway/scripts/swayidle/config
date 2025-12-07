@@ -1,0 +1,5 @@
+timeout 1800 '~/.config/sway/scripts/swaylock/screenoff.sh' resume '~/.config/sway/scripts/swaylock/screenon.sh'
+timeout 1805 '~/.config/sway/scripts/swaylock/lock.sh'
+timeout 30 '~/.config/sway/scripts/swaylock/lockedscreenoff.sh' resume '~/.config/sway/scripts/swaylock/lockedscreenon.sh'
+before-sleep '~/.config/sway/scripts/swaylock/lock.sh'
+lock '~/.config/sway/scripts/swaylock/lock.sh'

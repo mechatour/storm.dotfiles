@@ -7,12 +7,13 @@
     "margin-right": 5,
     "margin-bottom": 5,
     // Choose the order of the modules
-    "modules-left": ["niri/workspaces","cffi/niri-taskbar","niri/window"],
+    "modules-left": ["sway/workspaces","sway/mode","wlr/taskbar"], //,"hyprland/window"],
     "modules-center": ["clock", "custom/weather","keyboard-state"],
     "modules-right": ["tray", "pulseaudio", "battery", "backlight", "network", "custom/wireguard","idle_inhibitor","custom/powermenu"],
 
-    "niri/workspaces": {
+    "sway/workspaces": {
         "format": "{icon}",
+        "disable-scroll": true,
         "all-outputs": false,
         "on-click": "activate"
     },
@@ -25,19 +26,6 @@
 	    "on-click-middle": "close"
     },
 
-   "cffi/niri-taskbar": {
-      "module_path": "/home/zane/.config/waybar/scripts/libniri_taskbar.so",
-	    "icon-size": 8,
-	    "tooltip-format": "{title}",
-	    "on-click": "activate",
-	    "on-click-middle": "close",
-      "format": "{state}{icon}"
-   },
-
-    "niri/window": {
-        "max-length": 200,
-        "separate-outputs": true
-    },
 
     "clock": {
     	"format": "{:%b %d %H:%M}",
@@ -91,22 +79,22 @@
     
      "custom/wireguard": {
         "format": "vpn:{}",
-        "exec": "~/.config/waybar/scripts/wireguard.sh short",
-        "on-click": "rofi -modi 'VPN Menu:~/.config/waybar/scripts/wireguard-rofi.sh' -show 'VPN Menu' -normal-window",
+        "exec": "~/.config/sway/scripts/waybar/scripts/wireguard.sh short",
+        "on-click": "rofi -modi 'VPN Menu:~/.config/sway/scripts/waybar/scripts/wireguard-rofi.sh' -show 'VPN Menu'",
         "interval": 10,
         "return-type": "json"
     },
 
     "custom/powermenu": {
     	"format": "power",
-    	"on-click": "pkill rofi|| sh ~/.config/waybar/scripts/power-rofi.sh",
+    	"on-click": "pkill rofi|| sh ~/.config/sway/scripts/waybar/scripts/power-rofi-sway.sh",
     	"tooltip": false
     },
     "custom/weather": {
         "format": "{}°",
         "tooltip": true,
         "interval": 900,
-        "exec": "~/.config/waybar/scripts/wttrbar/target/release/wttrbar --location eghi",
+        "exec": "~/.config/sway/scripts/waybar/scripts/wttrbar/target/release/wttrbar --location eghi",
         "return-type": "json"
     },
     "idle_inhibitor": {
@@ -119,12 +107,12 @@
         "tooltip-format-deactivated": "Presentation Disabled"
     },
     "network": {
+//         "interface": "wlp2s0",
          "format": "net:{ifname}",
          "format-wifi": "net:{essid} {signalStrength}%" ,
          "format-ethernet":"net:ethernet",
          "format-disconnected": "net:disconnected", //An empty format will hide the module.
-         "max-length": 50,
-         "tooltip-format": "{ipaddr}"
+         "max-length": 50
     },
     "battery": {
         "format": "bat:{capacity}%",
